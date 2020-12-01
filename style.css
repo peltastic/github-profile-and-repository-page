@@ -1,0 +1,304 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.bodyContainer {
+  width: 100%;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexbox1 {
+  flex: 0 0 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 1050px) {
+  .flexbox1 {
+    margin-right: auto;
+    flex: 0 0 35%;
+  }
+} 
+@media (max-width: 770px) {
+  .flexbox1 {
+    flex: 0 0 100%;
+    justify-content: flex-start;
+  }
+} 
+
+.flexbox1 .imgContainer  {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 770px) {
+  .flexbox1 .imgContainer {
+    flex: 0 0 20%;
+  } 
+}
+
+.flexbox1 h1 {
+  font-size: 3rem;
+  color: #3d3838;
+}
+
+@media (max-width: 500px) {
+  .flexbox1 h1 {
+    font-size: 2.3rem;
+  }
+}
+.flexbox1 h2 {
+  font-size: 2.2rem;
+  font-weight: 200;
+  color: #999191;
+}
+
+@media (max-width: 500px) {
+  .flexbox1 h2 {
+    font-size: 2rem;
+  }
+}
+
+
+.flexbox1 h3 {
+  font-size: 1.8rem;
+  font-weight: 200;
+  padding: 0 6rem;
+  margin-top: 1rem;
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 770px) {
+  .flexbox1 h3 {
+    padding: 0;
+  }
+}
+.flexbox1 button {
+  display: block;
+  margin-top: 2rem;
+  margin: 2rem 7rem;
+  padding: 1rem 0;
+  flex: 0 0 75%;
+  background-color: #f7f1f100;
+  border: 1px solid #8f8b8bc4;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(114, 107, 107);
+}
+
+@media (max-width: 770px) {
+  .flexbox1 button {
+    flex: 100%;
+    margin: 2rem 0;
+  }
+}
+
+.flexbox1 button:focus {
+  outline: none;
+}
+.head {
+  width: 100%;
+  height: 7rem;
+  display: block;
+  background-color: #333030;
+  margin-bottom: 7rem;
+}
+
+@media (max-width: 770px) {
+  .head {
+    margin-bottom: 1rem;
+  }
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color:#c9c0c0b3;
+  display: block;
+}
+
+@media (max-width: 770px) {
+  .line {
+    display: none;
+  }
+}
+
+.loginNames {
+  flex: 0 0 100%;
+  padding: 0 6rem;
+}
+
+@media (max-width: 770px) {
+  .loginNames {
+    flex: 0 0 60%;
+    padding: 0 1rem;
+  }
+}
+
+.repoDesc {
+  color: #aca6a6;
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+
+
+.profilePic {
+  border-radius: 50%;
+  height: 30rem;
+  display: block;
+  margin-top: -4rem;
+}
+
+@media (max-width: 770px) {
+  .profilePic  {
+    height: 15rem;
+    margin-top: 0;
+  }
+}
+@media (max-width: 500px) {
+  .profilePic  {
+    height: 7rem;
+    margin-top: 0;
+  }
+}
+
+.flexbox1 .div {
+  flex: 0 0 100%;
+  display: flex;
+  padding: 0 6rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 770px) {
+  .flexbox1 .div {
+    display: none;
+  }
+}
+
+.flexbox1 h4 {
+  
+  font-size: 1.5rem;
+  color: #312f2f;
+  font-weight: 200;
+  margin-left: .2rem;
+} 
+
+.flexbox2 {
+  height: 100%;
+  flex: 0 0 70%;
+  border-top: 1px solid #c9c0c0b3;
+  border-bottom: 1px solid #c9c0c0b3;
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap
+}
+
+@media (max-width: 1050px) {
+  .flexbox2 {
+    flex: 0 0 60%;
+  }
+} 
+
+@media (max-width: 770px) {
+  .flexbox2 {
+    flex: 0 0 100%;
+  }
+}
+
+.flexbox2 a {
+  padding: .5rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid #c9c0c0b3;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.flexbox2 button:focus {
+  outline: none;
+}
+
+.followersCount {
+  flex: 0 0 75%;
+  display: flex;
+  font-size: 1.5rem;
+  color: rgb(73, 71, 71);
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.repo {
+  flex: 0 0 100%;
+  align-items: center;
+  display: flex;
+  padding: 2rem 2rem;
+}
+
+.repoInfo {
+  display: flex;
+  align-items: center;
+}
+
+.repo:not(:last-child) {
+  border-bottom: 1px solid #c9c0c0b3;
+}
+
+.repoRight {
+  flex: 0 0 50%;
+  margin-right: auto;
+}
+
+@media (max-width: 500px) {
+  .repoRight {
+    flex: 0 0 70%;
+  }
+}
+
+
+
+.repoRight p{
+  display: inline;
+  margin: 0 .5rem;
+  font-size: 1.3rem;
+}
+
+.repoRight h1 {
+  margin-bottom: 2rem;
+  color: blue;
+  font-size: 2rem;
+}
+
+.lanColor {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+
+
+
